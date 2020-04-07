@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/angular.js"></script>
+    <title>Check Box Change Text Box Attribute</title>
+    <style>
+        div{
+            width:100%;
+            height:50px;
+            display:block;
+            margin:15px 0 0 10px;
+        }
+    </style>
+</head>
+<body ng-app="" ng-init="checked=true">
+    Click Me: <input type="checkbox" ng-model="checked" /><br />
+
+    <!-- ng-if creates or remove an HTML element based on the Boolean value returned-->
+    <div>
+        New: <input ng-if="checked" type="text" />
+    </div>
+
+    <!-- ng-readonly makes an element readonly based on the Boolean value returned -->
+    <div>
+        Read-only: <input ng-readonly="checked" type="text" value="This is read-only." />
+    </div>
+
+    <!-- ng-disabled disable an element based on the Boolean value returned -->
+    <div>
+        Disabled: <input ng-disabled="checked" type="text" value="This is disabled." />
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/angular.js"></script>
+    <title>Directive Syntax Variation</title>
+</head>
+<body ng-app="">
+    Enter Name: <input type="text" ng-model="name" /><br/>
+    data-ng-bind: <span data-ng-bind="name"></span><br />
+    data-ng:bind: <span data-ng:bind="name"></span><br />
+    data:ng:bind: <span data:ng:bind="name"></span><br />
+    x:ng:bind: <span x:ng:bind="name"></span><br />
+    ng:bind: <span ng:bind="name"></span><br />
+    x-ng-bind: <span x-ng-bind="name"></span><br />
+    x_ng_bind: <span x_ng_bind="name"></span><br />
+    ng_bind: <span ng_bind="name"></span><br />
+    ng-bing: <span ng-bind="name"></span><br />
+</body>
+</html>
+
+<!--
+    AngularJS directive is not mandatory to use ng- syntax only
+    Directive can start with x- or data-, for example ng-model can be written as data-ng-model or x-ng-model
+
+    Also, the - can be replaced with : or _ or both
+    ng-model can be written as ng_model or ng:model
+-->

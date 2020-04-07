@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConditionCheck.html" />
+    <Content Include="DirectiveSyntax.html" />
     <Content Include="ExpressionArithmetic.html" />
     <Content Include="ExpressionDataType.html" />
     <Content Include="ExpressionVariable.html" />
@@ -75,6 +77,7 @@
     <Content Include="MultiplyTwoNum.html" />
     <Content Include="Ng-AppPlacement2.html" />
     <Content Include="Ng-Bind Data.html" />
+    <Content Include="Ng-Repeat.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />

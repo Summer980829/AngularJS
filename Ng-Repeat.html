@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/angular.js"></script>
+    <title>Array - ng-repeat</title>
+    <style>
+        div{
+            border:1px solid green;
+            width:100%;
+            height:50px;
+            display:block;
+            margin-bottom:10px;
+            text-align:center;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body ng-app="" ng-init="students=['Bill', 'Steve', 'Ram']">
+    <ol>
+        <li ng-repeat="item in students">
+            {{item}}
+        </li>
+    </ol>
+    <!-- ng-repeat is used with array. Any property name can be set for xxx in students-->
+    <!-- It create <li> element for each item in array -->
+
+    <div ng-repeat="name in students">
+        {{name}}
+    </div>
+    <!-- It create <div> element for each item in array -->
+</body>
+</html>
