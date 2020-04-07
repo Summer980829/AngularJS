@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular ng-bind</title>
+    <script src="Scripts/angular.js"></script>
+</head>
+<body ng-app="">
+    <div>
+        5 + 5 = <span ng-bind="5+5"></span> <br/>
+
+        Enter your name: <input type="text" ng-model="name"/><br/>
+        Hello <span ng-bind="name"></span><br/>
+        Hello {{name}}
+    </div>
+</body>
+</html>
+
+<!-- 
+    ng-bind works the same as angular expression    
+    In the example, ng-bind directive binds a result of an expression "5+5" to the <span>
+
+    The same way, it binds a value of model property "name" to the <span>.
+    The value of "name" property will be the value entered in a textbox.
+-->

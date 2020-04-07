@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ng-app Directive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+</head>
+<body>
+    <div>
+        {{2/2}}
+    </div>
+    <!--
+       The placement of ng-app is important so that the expression can be 
+       interpret correcty within the HTML context
+
+       Only the div with ng-app was working compare to the other 
+       two div with no ng-app directive
+    -->
+    <div id="myDiv" ng-app>
+        {{5/2}}
+        <div>
+            {{10/2}}
+        </div>
+    </div>
+    <div>
+        {{2/2}}
+    </div>
+</body>
+</html>
