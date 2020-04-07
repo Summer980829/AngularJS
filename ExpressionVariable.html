@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS application variables</title>
+    <script src="Scripts/angular.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="greet='Hello World!'; amount=10000;rateOfInterest=10.5; duration=10; myArr=[100,200];person={firstName:'Steve', lastName:'Jobs'}">
+
+        {{ (amount * rateOfInterest * duration)/100 }} <br/>
+        {{ myArr[1] }} <br/>
+        {{ person.firstName + " " + person.lastName }}
+
+    </div>
+</body>
+</html>
+
+<!--
+    AngularJS expression declare variable using ng-init directive 
+    ng-init can be used to declare any data type
+-->

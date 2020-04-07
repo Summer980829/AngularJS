@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>First AngularJS Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+</head>
+<body ng-app="">
+    <h1>First AngularJS Application</h1>
+    <!--
+    Most of the directives in AngularJS are starting with ng. It stands for Angular.
+        ng-app: The ng-app directive is a starting point of Angular Application
+        ng-model: bind the value of an input field (HTML Element) to a variable($scope object) created in AngularJS
+                  AngularJS framework will create two properties called Num1 and Num2
+                  in the scope and will assign a value that we type into textboxes.
+        An expression is like JavaScript code which is usually wrapped inside double curly braces such as {{ expression }}.
+    -->
+    Enter Numbers to Multiply:
+    <input type="text" ng-model="Num1" /> x <input type="text" ng-model="Num2" /> = <span>{{Num1 * Num2}}</span>
+</body>
+</html>
+

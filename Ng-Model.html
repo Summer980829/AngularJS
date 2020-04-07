@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>NG-MODEL 2 way binding</title>
+    <script src="Scripts/angular.js"></script>
+</head>
+<body ng-app="">
+    <input type="text" ng-model="name" />
+    <div>
+        Hello {{name}}
+    </div>
+</body>
+</html>
+
+<!--
+By using ng-model, it bind HTML element (<input>, <select>, <textarea>) to a specific property on the $scope object
+So the element will be the value of the property and vice-versa.
+    
+Note: Variable initialized in ng-init are different from the properties defined using ng-model directive.
+    The variable initialized in ng-init are not attached to $scope object whereas ng-model properties are attached to $scope object.
+-->
