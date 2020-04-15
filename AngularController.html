@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="Scripts/angular.js"></script>
+    <title>Angular Controller</title>
+</head>
+<body ng-app="myNgApp">
+
+    <div ng-controller="myController">
+        <!--(1)-->
+        {{message}}     <!--(5)-->
+    </div>
+    <script>
+        var ngApp = angular.module('myNgApp', []);    //(2)
+
+        ngApp.controller('myController', function ($scope) {   //(3)
+            $scope.message = "Hello World!";        //(4)
+        });
+    </script>
+</body>
+</html>
+
+
+<!--
+$scope
+    1. specify a controller using ng-controller
+    2. create an application (app) module
+    3. create a controller -- module.controller()
+    4. Attach a property to $scope
+    5. Use a property created inside controller
+-->
+
+<!--
+In the above example, ng-controller="myController" directive is applied 
+to the <div> element where "myController" is the name of the controller. 
+Inside div element, we have specified {{message}} expression. 
+-->
